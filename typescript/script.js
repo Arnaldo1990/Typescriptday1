@@ -10,7 +10,6 @@ for (let i = 0; i < numbers.length; i++) {
     document.getElementById("result").innerHTML += `<hr>`;
 }
 // Basic ex 2
-let names = [
-    { fName: "Arnaldo", lName: "Bismarques" },
-];
+let names = { fName: "Arnaldo", lName: "Bismarques", };
 console.log(names);
+document.getElementById("result").innerHTML = `<p>${names.fName} ${names.lName}</p>`;

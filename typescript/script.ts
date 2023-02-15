@@ -10,7 +10,8 @@ for (let i = 0; i < numbers.length; i++) {
   }
   // Basic ex 2
 
-let names: { fName: string; lName: string}[] = [
-    { fName: "Arnaldo", lName: "Bismarques"},
-];
+  let names: { fName: string; lName: string} =
+  { fName: "Arnaldo", lName: "Bismarques",}
 console.log(names);
+(document.getElementById("result") as HTMLElement).innerHTML = `<p>${names.fName} ${names.lName}</p>`
+
