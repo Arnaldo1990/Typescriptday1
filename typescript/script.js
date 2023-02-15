@@ -24,10 +24,6 @@ names.forEach((ab) => {
 names.forEach((ab) => {
     console.log(ab.lName.repeat(10));
 });
-function message() {
-    document.getElementById("people").innerHTML = "Hello, I am here";
-}
-setTimeout(message, 3000);
 // Basic ex 3
 const namesagain = document.getElementById("people");
 let array = ["Samuel<br>", "Julia<br>", "Arnaldo<br>", "Khoa<br>", "Tuan<br><hr>"];
