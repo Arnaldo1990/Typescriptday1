@@ -10,7 +10,33 @@ for (let i = 0; i < numbers.length; i++) {
   }
   // Basic ex 2
 
-  let names: { fName: string; lName: string} =
-  { fName: "Arnaldo", lName: "Bismarques",}
-console.log(names);
-(document.getElementById("result") as HTMLElement).innerHTML = `<p>${names.fName} ${names.lName}</p>`
+let result = document.getElementById("names") as HTMLElement;
+let names: { fName: string; lName: string }[] = [
+  {
+    fName: "Arnaldo <br><hr>",
+    lName: "Bismarques <br>",
+  },
+];
+names.forEach((ab) => {
+  console.log(ab.fName.repeat(10));
+  result.innerHTML = (ab.fName.repeat(10));
+});
+
+names.forEach((ab) => {
+    console.log(ab.lName.repeat(10));
+  });
+  function message() {
+    document.getElementById("result").innerHTML = "Hello, I am here";
+ }
+ setTimeout(message,3000);
+
+// Basic ex 3
+
+const namesagain = document.getElementById("people") as HTMLElement;
+let array = ["Samuel<br>", "Julia<br>", "Arnaldo<br>", "Khoa<br>", "Tuan<br>"];
+for (let i = 0; i < array.length; i++) {
+  const index = array[i];
+  console.log(index);
+  console.log(array[i], array);
+   result.innerHTML += index
+}
