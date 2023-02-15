@@ -14,4 +14,3 @@ for (let i = 0; i < numbers.length; i++) {
   { fName: "Arnaldo", lName: "Bismarques",}
 console.log(names);
 (document.getElementById("result") as HTMLElement).innerHTML = `<p>${names.fName} ${names.lName}</p>`
-
